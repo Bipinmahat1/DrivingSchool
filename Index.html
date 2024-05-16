@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving School Institute</title>
+  <link rel="stylesheet" href="script.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Driving School Institute</h1>
+    <div class="social-icons">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="enrollOption" class="button">Enroll Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>Welcome to Driving School Institute</h2>
+    <img src="Driving1.jpeg" alt="Driving class" width="600" height="600">
+    <p>Get ready to embark on an exciting journey towards becoming a skilled and responsible driver.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Driving School Institute! We are dedicated to providing high-quality driving education to help you become a safe and confident driver. Our experienced instructors offer personalized training tailored to your learning pace and needs. Whether you're a beginner or looking to enhance your driving skills, we're here to guide you every step of the way.</p>
+    <p>At Driving School Institute, safety is our top priority. We emphasize defensive driving techniques and ensure that our students understand the importance of following traffic rules and regulations.</p>
+    <p>Join us today and embark on your journey to becoming a skilled and responsible driver!</p>
+  </section>
+
+  <section id="enrollmentFormSection" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Enrollment Form</h2>
+        <form id="enrollmentForm">
+            <label for="plan">Select Plan:</label>
+            <select id="plan" name="plan">
+                <option value="1">1 Month ($250)</option>
+                <option value="2">2 Months ($450)</option>
+                <option value="3">3 Months ($600)</option>
+            </select><br>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required placeholder="Your Name"><br>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="Enter 16-digit card number" required><br>
+
+            <label for="expirationDate">Expiration Date (MM/YYYY):</label>
+            <input type="text" id="expirationDate" placeholder="MM/YYYY" required><br>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="Enter 3-digit CVV" required><br>
+
+            <button type="submit" id="payNow">Pay Now</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+        </form>
+    </div>
+</section>
+
+  <section id="billSection" class="modal"> <!-- Added bill section -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Bill</h2>
+      <!-- Enrollment details will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@drivingschool.com</p>
+    <p>Phone: 123-456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Driving School Institute. All rights reserved.</p>
+  </footer>
+</body>
+</html>
